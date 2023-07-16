@@ -3,6 +3,28 @@
 }
 
 #navbar-icon {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0.5em;
+    margin-right: 0.75em;
 }
+
+.navbar {
+    min-height: 1em;
+}
+
+#search-bar{
+    /*part of the navbar problem is because i put a margin-bottom but even if i remove the margin-bottom, 
+    the navbar doesn't have a solid bottom*/
+    margin-bottom: 0.6em;
+    margin-left: 4em;
+}
+
+#ss-search-icon{
+    margin-top: 0.4em;
+    margin-left: 0.4em;
+}
+
+#ss-search-text{
+    margin-left: 2em;
+    font-size: 17px;
+}
+
