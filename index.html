@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CSS goes here -->
-  <link 
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-      rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
-      crossorigin="anonymous">
-  <!--your external CSS stylesheet goes here-->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Bootstrap Icons goes here -->
-  <link 
-  rel="stylesheet" 
-  href= "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS goes here -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+        crossorigin="anonymous">
+    <!--your external CSS stylesheet goes here-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap Icons goes here -->
+    <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
   <title>Bootstrap Email Template</title>
 </head>
 
 <body>
-<!-- navigation bar-->
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-    <span class="navbar brand"></span> 
-      <div class="container-fluid">
-<!-- navigation icons-->
-        <i id="navbar-icon" class="bi bi-list position-absolute top-50 start-0 d-flex" style="font-size: 2.3em;" ></i>
-        <i id="navbar-icon" class="bi bi-calendar-date position-absolute top-50 end-0 d-flex" style="font-size: 2em;"></i>
-        <h5 class="d-md-none d-lg-block d-lg-none d-xl-block d-xl-none justify-content-center align-items-end mt-5 d-flex">Inbox</h5>    
-<!-- search bar for >medium screen-->
-        <div id="search-bar" class="col-8 justify-content-center d-none d-sm-block d-sm-none d-md-block d-flex mt-5">
-            <div class="input-group">
-              <input class="form-control me-2 rounded" type="search" placeholder="Search" aria-label="Search">
-              <i class="bi-search" aria-hidden="true"></i>  
-            </div> 
-         </div> 
+    <!-- navigation bar-->
+    <nav class="navbar">
+        <div class="container-fluid">
+          <span class="navbar brand"></span> 
+            <div class="container-fluid">
+    <!-- navigation icons-->
+              <i id="hamburger-icon" class="bi bi-list position-absolute top-50 start-0 d-flex";" ></i>
+              <i id="calendar-icon" class="bi bi-calendar-date position-absolute top-50 end-0 d-flex"></i>
+              <h5 class="d-md-none d-lg-block d-lg-none d-xl-block d-xl-none justify-content-center align-items-end mt-5 d-flex">Inbox</h5>    
+    <!-- search bar for medium+ screen-->
+                 <div id="search-bar" class="col-8 justify-content-center d-none d-md-block mt-5">
+                    <div class="input-group">
+                        <input class="form-control me-2 rounded" type="search" placeholder="Search" aria-label="Search">
+                        <i class="bi-search" aria-hidden="true"></i>  
+                    </div> 
+                 </div> 
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-<!-- Column Two -->
+
   <div class="container-fluid">
-    <div class="row w-100">
-      <div class="col-xs-12 col-md-5 col-lg-4 order-1">
-  <!--search bar for <small screen-->
-        <div class="justify-content-center d-md-none d-lg-block d-lg-none d-xl-block d-xl-none p-2 ">
-          <div class="input-group">
-            <input id="ss-search-text" class="form-control me-2 border-0" type="search" placeholder="Search" aria-label="Search">
-            <i id="ss-search-icon" class="bi-search position-absolute start-0 d-flex" style="font-size: 1.4em;"" aria-hidden="true"></i>  
-          </div> 
-        </div> 
-  <!--endless rows of emails-->
-        <div class="row bg-light border p-4" id="single-email">email</div>
-        <div class="row bg-light border p-4" id="single-email">email</div>
-        <div class="row bg-light border border-success p-4" id="single-email">email</div>
-        <div class="row bg-light border p-4" id="single-email">email</div>
-        <div class="row bg-light border p-4" id="single-email">email</div>
-        <div class="row bg-light border p-4" id="single-email">email</div>
-        <div class="row bg-light border p-4" id="single-email">email</div>
-        <div class="row bg-light border p-4" id="single-email">email</div>
-        <div class="row bg-light border p-4" id="single-email">email</div>
-      </div>
-
-
+     <div class="row w-100">
+    <!-- Column Two -->
+        <div class="col-xs-12 col-md-5 col-lg-4 order-1">
+    <!--search bar for xs&sm screen-->
+              <div class="justify-content-center d-md-none d-xl-block p-2 ">
+                  <div class="input-group">
+                        <input id="ss-search-text" class="form-control me-2 border-0" type="search" placeholder="Search" aria-label="Search">
+                        <i id="ss-search-icon" class="bi-search position-absolute start-0 d-flex" aria-hidden="true"></i>  
+                  </div> 
+              </div> 
+    <!--endless rows of emails-->
+              <div class="row p-4" id="single-email">top email</div>
+              <div class="row p-4" id="single-email">email</div>
+              <div class="row border-success p-4" id="single-email">email</div>
+              <div class="row p-4" id="single-email">email</div>
+              <div class="row p-4" id="single-email">email</div>
+              <div class="row p-4" id="single-email">email</div>
+              <div class="row p-4" id="single-email">email</div>
+              <div class="row p-4" id="single-email">email</div>
+              <div class="row p-4" id="single-email">email</div>
+          </div>
+      <!-- Column Three -->
       <div class="col-md-auto d-none d-md-block order-1">
-        Column Three
+          <div class="container-fluid">
+              <div class="row">
+                <div class="col-xl" id="chat-box">
+                  Column Three
+                </div>
+              </div>
+          </div>
       </div>
 
 

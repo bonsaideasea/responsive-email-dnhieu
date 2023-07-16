@@ -1,30 +1,53 @@
 #single-email {
-    border: 1px solid rgb(200,0,40,0.6);
+    border-top: 1px solid rgb(72, 59, 59, 0.2);
+    border-bottom: 1px solid rgb(72, 59, 59, 0.2);
 }
 
-#navbar-icon {
+#hamburger-icon {
     margin-left: 0.5em;
     margin-right: 0.75em;
+    color: #DD8EF0;
+    font-size: 40px;
+}
+
+#calendar-icon {
+    margin-left: 0.5em;
+    margin-right: 0.75em;
+    font-size: 33px;
+    color: #DD8EF0;
 }
 
 .navbar {
     min-height: 1em;
+    background-color: #6C5959;
 }
 
-#search-bar{
+#search-bar {
     /*part of the navbar problem is because i put a margin-bottom but even if i remove the margin-bottom, 
     the navbar doesn't have a solid bottom*/
     margin-bottom: 0.6em;
     margin-left: 4em;
+
 }
 
-#ss-search-icon{
+#ss-search-icon {
     margin-top: 0.4em;
     margin-left: 0.4em;
+    font-size: 1.4em;
+    color: #483B3B;
 }
 
-#ss-search-text{
+#ss-search-text {
     margin-left: 2em;
     font-size: 17px;
 }
 
+h5 { 
+    color: #fff;
+}
+
+#chat-box {
+    max-width: 100%;
+    background-color:aquamarine;
+
+}
