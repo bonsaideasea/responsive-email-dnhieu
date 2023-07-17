@@ -1,12 +1,16 @@
+body {
+    overflow: auto;
+}
+
 #single-email {
-    border-top: 1px solid rgb(72, 59, 59, 0.2);
-    border-bottom: 1px solid rgb(72, 59, 59, 0.2);
+    border-top: 1px solid rgb(72, 59, 59, 0.4);
+    border-bottom: 1px solid rgb(72, 59, 59, 0.4);
 }
 
 #hamburger-icon {
     margin-left: 0.5em;
     margin-right: 0.75em;
-    color: #DD8EF0;
+    color: #E086EF;
     font-size: 40px;
 }
 
@@ -14,12 +18,12 @@
     margin-left: 0.5em;
     margin-right: 0.75em;
     font-size: 33px;
-    color: #DD8EF0;
+    color: #E086EF;
 }
 
 .navbar {
     min-height: 1em;
-    background-color: #6C5959;
+    background-color: #4A3535;
 }
 
 #search-bar {
@@ -37,6 +41,10 @@
     color: #483B3B;
 }
 
+#md-search-icon {
+    color: #E086EF;
+    font-size: 1.4em;
+}
 #ss-search-text {
     margin-left: 2em;
     font-size: 17px;
@@ -47,7 +55,25 @@ h5 {
 }
 
 #chat-box {
-    max-width: 100%;
-    background-color:aquamarine;
-
+    height: 88vh;
+    background-color: #F8D0F4;
 }
+
+#lg-list {
+    height: 88vh;
+    background-color: #F8D0F4;
+}
+
+.card-header {
+    font-size: 16px;
+    padding-left: 70px;
+}
+
+#single-msg {
+    margin-left:25px;
+    margin-top: 25px;
+    background-color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
