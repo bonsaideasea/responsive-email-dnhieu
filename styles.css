@@ -1,10 +1,17 @@
 body {
-    overflow: auto;
+    margin: 0;
+    padding: 0;
 }
 
 #single-email {
-    border-top: 1px solid rgb(72, 59, 59, 0.4);
-    border-bottom: 1px solid rgb(72, 59, 59, 0.4);
+    border-top: 0.75px solid rgb(72, 59, 59, 0.4);
+    border-bottom: 0.75px solid rgb(72, 59, 59, 0.4);
+}
+
+#clicked-email {
+    background-color: rgb(195,239,168,.67);
+    border-top: 1.3px solid rgb(137,183,137,0.8);
+    border-bottom: 1.3px solid rgb(137,183,137,0.8);
 }
 
 #hamburger-icon {
@@ -14,6 +21,10 @@ body {
     font-size: 40px;
 }
 
+#hamburger-icon:hover{
+    cursor:pointer;
+}
+
 #calendar-icon {
     margin-left: 0.5em;
     margin-right: 0.75em;
@@ -21,6 +32,9 @@ body {
     color: #E086EF;
 }
 
+#calendar-icon:hover{
+    cursor:pointer;
+}
 .navbar {
     min-height: 1em;
     background-color: #4A3535;
@@ -64,16 +78,94 @@ h5 {
     background-color: #F8D0F4;
 }
 
+.card {
+    max-width: 35rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+}
+
 .card-header {
     font-size: 16px;
     padding-left: 70px;
 }
 
-#single-msg {
-    margin-left:25px;
-    margin-top: 25px;
+#single-msg-left {
+    margin-left:2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
     background-color: white;
-    padding-top: 15px;
-    padding-left: 20px;
+    padding-top: 0.9rem;
+    padding-left: 1.4rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
 }
 
+#single-msg-right {
+    margin-left:1rem;
+    margin-right: 1.7rem;
+    background-color: white;
+    padding-top: 0.9rem;
+    padding-left: 1.4rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+#reply-icon {
+    padding-left: 1rem; 
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    color: #6C5959;
+}
+
+#reply-icon:hover {
+    cursor: pointer;
+}
+
+#email-domain{
+    margin-left: 1rem;
+}
+
+.btn-primary{
+    margin-left: 2rem;
+}
+
+.pagination {
+    margin-right: 1rem;
+    padding-top: 0.1rem;
+}
+
+.time-left{
+    padding-left: 1.6rem;
+    padding-top: 0.3rem;
+    font-size: 14px;
+    color: #6C5959;
+}
+
+.time-right{
+    padding-left: 3rem;
+    padding-top: 0.3rem;
+    font-size: 14px;
+    color: #6C5959;
+
+}
+
+.bi-paperclip {
+    color: #6C5959;
+    font-size:16px;
+}
+
+.btn-info{
+     background-color:#6C5959;
+     border: 2px solid #fff;
+     color:#E086EF;
+     font-size: 19px;
+     padding-left: 5px;
+     padding-top:5px;
+     height: 65px;
+     width: 150px;
+     margin-top: 40px;
+}
+
+.bi-pencil-square{
+    font-size:35px;
+}

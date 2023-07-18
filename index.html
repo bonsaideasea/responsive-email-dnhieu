@@ -37,11 +37,9 @@
             </div>
         </div>
     </nav>
-
-
+ <!-- Column Two which displays emails in the inbox-->
   <div class="container-fluid">
      <div class="row w-100">
-    <!-- Column Two -->
         <div class="col-xs-12 col-md-5 col-lg-4 order-1 g-0">
     <!--search bar for xs&sm screen-->
               <div class="justify-content-center d-md-none d-xxl-block d-xxl-none p-2 ">
@@ -51,19 +49,52 @@
                   </div> 
               </div> 
     <!--endless rows of emails-->
-            <div class="container-fluid g-0" id="email-col">
-              <div class="row p-4" id="single-email">top email</div>
-              <div class="row p-4" id="single-email">email</div>
-              <div class="row border-success p-4" id="single-email">email</div>
-              <div class="row p-4" id="single-email">email</div>
-              <div class="row p-4" id="single-email">email</div>
-              <div class="row p-4" id="single-email">email</div>
-              <div class="row p-4" id="single-email">email</div>
-              <div class="row p-4" id="single-email">email</div>
-      
+            <div class="container-fluid g-0 d-flex flex-column" id="email-col">
+                  <div class="row p-4" id="single-email">
+                      <div class="form-check d-inline-flex">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">email</label>
+                      </div>
+                   </div>
+                   <div class="row p-4" id="single-email">
+                      <div class="form-check d-inline-flex">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">email</label>
+                      </div>
+                   </div>
+                   <div class="row p-4" id="clicked-email">
+                    <div class="form-check d-inline-flex">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">email</label>
+                    </div>
+                  </div>
+                  <div class="row p-4" id="single-email">
+                    <div class="form-check d-inline-flex">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">email</label>
+                    </div>
+                  </div>
+                  <div class="row p-4" id="single-email">
+                    <div class="form-check d-inline-flex">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">email</label>
+                    </div>
+                  </div>
+                  <div class="row p-4" id="single-email">
+                    <div class="form-check d-inline-flex">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">email</label>
+                    </div>
+                </div>
+                <div class="row p-4" id="single-email">
+                  <div class="form-check d-inline-flex">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">email</label>
+                  </div>
+               </div>            
     <!--pagination-->
-                  <nav class="email-navbar">
-                    <ul class="pagination justify-content-end mt-3">
+               <nav class="email-navbar">
+                  <ul class="pagination justify-content-end mt-3">
                       <li class="page-item">
                         <a class="page-link" href="#" aria-label="Previous">
                           <span aria-hidden="true">&laquo;</span>
@@ -79,44 +110,76 @@
                           <span class="sr-only">Next</span>
                         </a>
                       </li>
-                    </ul>
-                  </nav>
+                   </ul>
+               </nav>
             </div>
           </div>
   
-    <!-- Column Three -->
-      <div class="col-md-7 col-lg-6 d-none d-md-block order-1">
-          <div class="container-fluid" id="chat-box">
-            <div class="row" >
-              <div class="col-md-9 rounded" id="single-msg">Hey,blah blah blah blah blah blah blah blah blah blah blah blah blah??
+ <!-- Column Three which displays the email that's currently clicked on -->
+      <div class="col-md-7 col-lg-6 d-none d-md-block order-1 mh-100 g-0" id="chat-box">
+          <div class="container-fluid">
+            <div class="row justify-content-start">
+              <div class="col-md-9 rounded" id="single-msg-left">Hey,blah blah blah blah blah blah blah blah blah blah blah blah blah??
                 blah blah blah Hey,blah blah blah blah blah blah blah blah blah blah blah blah blah??
-                blah blah blah</div>
-             </div>
+                blah blah blah <br><br>
+                <i class="bi bi-paperclip"></i>
+    
+              </div>
+            </div>
 
+            <div class="row">
+              <div class="col-md-4">
+                <p class="time-left"> Yesterday, 7:14 am </p>
+              </div>
+            </div>
 
-              <div class="row">
-                <div class="col">
-              <!-- adding the reply section at the bottom of the screen-->
-                  <div></div>
-                  <div class="card border-dark mb-3" style="max-width: 25rem;">
-                    <i class="bi bi-reply position-absolute top-0 start-0 p-2"></i>
-                    <div class="card-header d-inline-flex">mika.kercha@storkie.com</div>
-                    <div class="card-body text-dark">
-                      <h5 class="card-title">Dark card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+            <div class="row justify-content-end">
+              <div class="col-md-9 rounded" id="single-msg-right">Hey,blah blah blah blah blah blah blah blah blah blah blah blah blah??
+                blah blah blah Hey,blah blah blah blah blah blah blah blah blah blah blah blah blah??
+                blah blah blah
+              </div>
+            </div>
+
+            <div class="row justify-content-end">
+              <div class="col-md-4">
+                <p class="time-right "> Today, 4:17 am </p>
+              </div>
+            </div>
+           
+            <div class="row">
+                <div class="col col-xl-12 d-flex justify-content-center align-self-end">
+       <!-- adding the reply section at the bottom of the screen-->
+                  <div class="card w-100 border-dark mb-3" id="reply">
+                    <i class="bi bi-reply position-absolute" id="reply-icon"></i>
+                        <div class="card-header d-inline-flex col-auto">
+                            <form>
+                                <div class="form-group">
+                                  <input type="email" class="form-control" id="email-domain" placeholder="mika.kercha@storkie.com">
+                                </div>
+                              </form>
+                              <button type="button" class="btn btn-primary">Send</button>
+                            </div>
+                                <div class="card-body text-dark">
+                            <form>
+                              <div class="form-group d-flex">
+                                <label for="exampleFormControlTextarea1"></label>
+                                <textarea class="form-control d-flex justify-content-center" id="form-text-area" rows="5"></textarea>
+                              </div>
+                            </form>
+                        </div>
                   </div>
                 </div>
               </div>
           </div>
       </div>
 
-
-      <div class="col-xs-12 col-lg-2 d-none d-lg-block">
+ <!-- Column One which displays the side navigation containing all the directories -->
+      <div class="col-xs-12 col-lg-2 d-none d-lg-block d-flex">
         <div class="container-fluid">
           <div class="row">
-            <div class="col" id="lg-list">
-               Column One
+            <div class="col d-flex justify-content-center" id="lg-list">
+              <button type="button" class="btn btn-info">
+                <i class="bi bi-pencil-square"></i>Compose</button>
             </div>
           </div>
         </div>
