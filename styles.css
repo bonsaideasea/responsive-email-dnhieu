@@ -79,7 +79,7 @@
 }
 
 #md-search-icon {
-    color: #E086EF;
+    color: #483B3B;
     font-size: 1.4em;
 }
 #ss-search-text {
@@ -94,6 +94,7 @@ h5 {
 #chat-box {
     height: 88vh;
     background-color: #F8D0F4;
+    border-top: 2.5px solid rgba(138, 127, 127, 0.7);
 }
 
 #lg-list {
@@ -218,6 +219,7 @@ h5 {
     font-size: 29px;
     padding-left: 0.5em;
     padding-top: 0.9em;
+    color: #422E2E;
 }
 
 #first-sidenav-icon:hover {
@@ -228,6 +230,7 @@ h5 {
     font-size: 29px;
     padding-left: 0.5em;
     padding-top: 0.6em;
+    color: #422E2E;
 }
 
 #sidenav-icon:hover {
@@ -235,6 +238,19 @@ h5 {
 }
 
 #sidenav-text {
-    font-size: 18px;
+    font-size: 19px;
     padding-left: 0.4em;
+    color: #422E2E;
+}
+
+#last-sidenav-icon {
+    font-size: 30px;
+    padding-left: 0.5em;
+    padding-top: 0.6em;
+    color: #857C7C;
+    color: #422E2E;
+}
+
+#last-sidenav-icon:hover {
+    cursor: pointer;
 }
