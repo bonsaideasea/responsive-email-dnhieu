@@ -34,6 +34,7 @@
     margin-right: 0.75em;
     color: #E086EF;
     font-size: 40px;
+    margin-top: 3px;
 }
 
 #hamburger-icon:hover{
@@ -41,7 +42,7 @@
 }
 
 #calendar-icon {
-    margin-top: 1px;
+    margin-top: 4.5px;
     margin-right: 4.7rem;
     font-size: 32px;
     color: #E086EF;
@@ -54,8 +55,8 @@
 #nav-compose-icon {
     font-size: 35px;
     color: #E086EF;
-    margin-right: 1.5rem;
-    margin-top: -7.5px;
+    margin-right: 1rem;
+    margin-top: -4.5px;
 }
 
 #nav-compose-icon {
@@ -79,9 +80,14 @@
 }
 
 #md-search-icon {
-    color: #483B3B;
+    color: #1e1818;
     font-size: 1.4em;
 }
+
+#md-search-icon:hover {
+    cursor: pointer;
+}
+
 #ss-search-text {
     margin-left: 2em;
     font-size: 17px;
@@ -191,21 +197,23 @@ h5 {
 }
 
 .btn-info{
-     background-color:#544040;
-     border: 2px solid #fff;
-     color:#FF75F1;
-     font-size: 19px;
-     padding-left: 5px;
-     padding-top:5px;
-     height: 65px;
-     width: 155px;
-     margin-top: 40px;
+    background-color:#544040;
+    border: 2px solid #fff;
+    color:#FF75F1;
+    font-size: 19px;
+    padding-top:5px;
+    height: 65px;
+    margin-top: 40px;
+    width: 100%;
+    min-width: 60px;
+    max-width: 180px;
 }
 
 .bi-pencil-square{
     font-size:35px;
     padding-top: 8px;
-    padding-left: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .compose {
@@ -217,7 +225,6 @@ h5 {
 
 #first-sidenav-icon {
     font-size: 29px;
-    padding-left: 0.5em;
     padding-top: 0.9em;
     color: #422E2E;
 }
@@ -228,24 +235,28 @@ h5 {
 
 #sidenav-icon {
     font-size: 29px;
-    padding-left: 0.5em;
     padding-top: 0.6em;
     color: #422E2E;
+}
+
+@media (min-width: 1200px) {
+    #sidenav-icon, #first-sidenav-icon, #last-sidenav-icon {
+        padding-left: 0.9em;
+    }
 }
 
 #sidenav-icon:hover {
     cursor: pointer;
 }
 
-#sidenav-text {
+.sidenav-text {
     font-size: 19px;
     padding-left: 0.4em;
     color: #422E2E;
 }
 
-#last-sidenav-icon {
+.last-sidenav-icon {
     font-size: 30px;
-    padding-left: 0.5em;
     padding-top: 0.6em;
     color: #857C7C;
     color: #422E2E;
