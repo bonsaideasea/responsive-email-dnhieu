@@ -18,13 +18,71 @@
 <body>
     <!--setting up overall container-->
     <div class="container-fluid g-0">
+        <!--duplicate navbar code for md&lg screen -->
+        <div class="row g-0 d-none d-md-block d-xl-none">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <span class="navbar-brand"></span>
+                    <div class="container-fluid">
+                        <!-- navigation icons for md&lg-->
+                        <i id="hamburger-icon"
+                           class="bi bi-list position-absolute top-50 start-0 d-flex d-block"></i>
+                        <i id="calendar-icon"
+                           class="bi bi-calendar-date position-absolute top-50 end-0 d-flex d-block"></i>
+                        <i id="nav-compose-icon"
+                           class="bi bi-pencil-square position-absolute top-50 end-0 d-flex d-block"></i>
+                        <h5 class="d-md-none d-lg-block d-lg-none d-xl-block d-xl-none justify-content-center align-items-end mt-5 d-flex">
+                            Inbox</h5>
+                    </div>
+                    <!-- search bar for md&lg-->
+                    <div class="container-fluid">
+                        <div id="search-bar">
+                             <div class="col-md-9 col-lg-10 d-none d-md-block mt-5 d-flex justify-content-l">
+                            <div class="input-group">
+                                <span id="md-search-icon" class="bi bi-search input-group-text"></span>
+                                <input class="form-control me-2 rounded-right" type="search"
+                                    placeholder="Search" aria-label="Search">
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+        </div>
         <!--inputting a row and its 2 columns-->
         <div class="row g-0">
             <!--this column will hold Navbar, Column 1, & Column 2-->
-            <div class="col-lg-5 col-xl-6 g-0">
+            <div class="col-md-5 col-lg-5 col-xl-6 g-0">
                 <div class="container-fluid g-0">
-                    <!-- setting up the Navbar-->
-                    <div class="row g-0">
+                    <!-- setting up the navbar visible only on xs,s,xL screen-->
+                    <div class="row g-0 d-none d-md-none d-lg-block d-lg-none d-xl-block">
+                        <nav class="navbar">
+                            <div class="container-fluid">
+                                <span class="navbar-brand"></span>
+                                <div class="container-fluid">
+                                    <!-- navigation icons-->
+                                    <i id="hamburger-icon"
+                                       class="bi bi-list position-absolute top-50 start-0 d-flex d-block d-xl-none"></i>
+                                    <i id="calendar-icon"
+                                       class="bi bi-calendar-date position-absolute top-50 end-0 d-flex d-block d-xl-none"></i>
+                                    <i id="nav-compose-icon"
+                                       class="bi bi-pencil-square position-absolute top-50 end-0 d-flex d-block d-xl-none"></i>
+                                    <h5 class="d-md-none d-lg-block d-lg-none d-xl-block d-xl-none justify-content-center align-items-end mt-5 d-flex">
+                                        Inbox</h5>
+                                </div>
+                                <!-- search bar visible only on xL screen-->
+                                <div class="container-fluid d-flex g-0 justify-content-start" id="search-bar">
+                                    <div class="d-none d-md-block mt-5 col-xl">
+                                        <div class="input-group">
+                                            <span id="md-search-icon" class="bi bi-search input-group-text"></span>
+                                            <input class="form-control me-2 rounded-right" type="search"
+                                                placeholder="Search" aria-label="Search">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!--search bar visible only on xs & s screen-->
+                    <div class="row g-0 d-block d-sm-block d-md-none">
                         <nav class="navbar">
                             <div class="container-fluid">
                                 <span class="navbar-brand"></span>
@@ -39,23 +97,12 @@
                                     <h5 class="d-md-none d-lg-block d-lg-none d-xl-block d-xl-none justify-content-center align-items-end mt-5 d-flex">
                                         Inbox</h5>
                                 </div>
-                                <!-- search bar visible only on md+ screen-->
-                                <div class="container-fluid">
-                                    <div id="search-bar">
-                                         <div class="col-md-9 col-lg-10 d-none d-md-block mt-5 d-flex justify-content-l">
-                                        <div class="input-group">
-                                            <span id="md-search-icon" class="bi bi-search input-group-text"></span>
-                                            <input class="form-control me-2 rounded-right" type="search"
-                                                placeholder="Search" aria-label="Search">
-                                        </div>
-                                    </div>
-                                </div>
                         </nav>
                     </div>
                     <!--setting up Col 1 & 2 under navbar-->
                     <div class="row">
                         <!--Column 1 (visible only on lg+) // displays the side nav-->
-                        <div class="col-lg-4 d-none d-lg-block d-flex">
+                        <div class=" col-xl-4 d-none d-xl-block d-flex">
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col d-flex align-items-center flex-column" id="lg-list">
@@ -138,7 +185,7 @@
                             </div>
                         </div>
                         <!--Column 2 (always visible) // displays all emails-->
-                        <div class="row col-md-5 col-lg-8">
+                        <div class="row col-md col-lg-12 col-xl-8">
                             <!--search bar for xs&sm screen-->
                             <div class="justify-content-center d-md-none d-xxl-block d-xxl-none p-2 ">
                                 <div class="input-group">
@@ -149,14 +196,14 @@
                                 </div>
                             </div>
                             <!--endless rows of emails-->
-                            <div class="container-fluid g-0 d-flex flex-column" id="email-col">
+                            <div class="col container-fluid g-0 d-flex flex-column">
                                 <div class="row p-4" id="top-email">
                                     <div class="form-check d-inline-flex">
                                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         <label class="form-check-label" for="defaultCheck1">email</label>
                                     </div>
                                 </div>
-                                <div class="row p-4" id="single-email">
+                                <div class="row p-4 single-email">
                                     <div class="form-check d-inline-flex">
                                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         <label class="form-check-label" for="defaultCheck1">email</label>
@@ -168,25 +215,25 @@
                                         <label class="form-check-label" for="defaultCheck1">email</label>
                                     </div>
                                 </div>
-                                <div class="row p-4" id="single-email">
+                                <div class="row p-4 single-email">
                                     <div class="form-check d-inline-flex">
                                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         <label class="form-check-label" for="defaultCheck1">email</label>
                                     </div>
                                 </div>
-                                <div class="row p-4" id="single-email">
+                                <div class="row p-4 single-email">
                                     <div class="form-check d-inline-flex">
                                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         <label class="form-check-label" for="defaultCheck1">email</label>
                                     </div>
                                 </div>
-                                <div class="row p-4" id="single-email">
+                                <div class="row p-4 single-email">
                                     <div class="form-check d-inline-flex">
                                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         <label class="form-check-label" for="defaultCheck1">email</label>
                                     </div>
                                 </div>
-                                <div class="row p-4" id="single-email">
+                                <div class="row p-4 single-email">
                                     <div class="form-check d-inline-flex">
                                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         <label class="form-check-label" for="defaultCheck1">email</label>
