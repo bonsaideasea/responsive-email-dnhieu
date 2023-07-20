@@ -67,9 +67,17 @@
     background-color: #4A3535;
 }
 
-#search-bar {
-    margin-bottom: 0.6em;
-    margin-left: 4em;
+@media (max-width: 1200px) {
+    #search-bar {
+        margin-bottom: 0.6em;
+        margin-left: 4em;
+    }
+}
+
+@media (min-width: 1200px) {
+    #search-bar {
+        margin-bottom: 0.6em;
+    }
 }
 
 #ss-search-icon {
@@ -101,6 +109,13 @@ h5 {
     height: 88vh;
     background-color: #F8D0F4;
     border-top: 2.5px solid rgba(138, 127, 127, 0.7);
+}
+
+@media (min-width: 1200px){
+    #chat-box {
+        height: 100vh;
+        border-top: 0;
+    }
 }
 
 #lg-list {
@@ -264,4 +279,13 @@ h5 {
 
 #last-sidenav-icon:hover {
     cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    .form-check {
+        margin-left: 20px;
+    }
+}
+.form-check-label {
+    padding-left: 10px;
 }
