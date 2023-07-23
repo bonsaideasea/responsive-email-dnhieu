@@ -39,6 +39,7 @@
 
 #hamburger-icon:hover{
     cursor:pointer;
+    text-shadow: 0px 0px 15px #f249e1, 0px 0px 15px #f249e1, 0px 0px 20px #f249e1;   
 }
 
 #calendar-icon {
@@ -50,6 +51,7 @@
 
 #calendar-icon:hover{
     cursor:pointer;
+    text-shadow: 0px 0px 15px #f249e1, 0px 0px 15px #f249e1, 0px 0px 20px #f249e1;   
 }
 
 #nav-compose-icon {
@@ -59,12 +61,22 @@
     margin-top: -4.5px;
 }
 
-#nav-compose-icon {
-    cursor:pointer;
+#nav-compose-icon:hover {
+    cursor:pointer; 
+    text-shadow: 0px 0px 15px #f249e1, 0px 0px 15px #f249e1, 0px 0px 20px #f249e1;  
 }
 .navbar {
     min-height: 1em;
     background-color: #4A3535;
+}
+
+@media (min-width: 1200px) {
+    .navbar{
+        background-image: url(storkie.png);
+        background-repeat: repeat-x;
+        background-size: 63px 63px;
+        background-position: -40px 5px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -180,7 +192,7 @@ h5 {
 
 #email-domain{
     margin-left: 1rem;
-    padding-right: 11rem;
+    margin-right: 11rem;
 }
 
 .btn-primary{
@@ -246,6 +258,11 @@ h5 {
 
 #first-sidenav-icon:hover {
     cursor: pointer;
+    text-shadow: 0px 0px 15px #f249e1, 0px 0px 15px #f249e1; 
+}
+
+#first-sidenav-icon:active {
+    text-shadow: 0px 0px 15px #f249e1, 0px 0px 15px #f249e1; 
 }
 
 #sidenav-icon {
@@ -262,6 +279,12 @@ h5 {
 
 #sidenav-icon:hover {
     cursor: pointer;
+    text-shadow: 0px 0px 15px #f249e1, 0px 0px 15px #f249e1, 0px 0px 20px #f249e1;   
+}
+
+#sidenav-icon:active {
+    cursor: pointer;
+    text-shadow: 0px 0px 15px #f249e1, 0px 0px 15px #f249e1, 0px 0px 20px #f249e1;   
 }
 
 .sidenav-text {
@@ -286,11 +309,39 @@ h5 {
         margin-left: 20px;
     }
 }
-.form-check-label {
-    padding-left: 10px;
+.form-check-header {
+    padding-left: 15px;
+    position:relative;
+    top: -20px;
+}
+
+.form-check-title {
+    position:relative;
+    left: -50px;
+    font-size: 14.5px;
+    top: -0.5px;
+    color:rgba(84, 75, 75, 0.7)
+}
+
+/*.form-check-date {
+    top: 14px;
+    font-size: 14px;
+    left: 280px;
+    position: absolute;
+}*/
+
+.form-check-text {
+    position:relative;
+    left: -144px;
+    font-size: 14.5px;
+    top: 24px;
+    color:rgba(84, 75, 75, 0.7)
 }
 
 .email-column {
-    overflow:hidden;
-    overflow-y: scroll;
+    position: relative;
+}
+
+.form-check-input {
+    min-width: 16px;
 }
