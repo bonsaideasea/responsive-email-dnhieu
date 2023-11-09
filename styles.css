@@ -121,6 +121,8 @@ h5 {
     height: 88vh;
     background-color: #F8D0F4;
     border-top: 2.5px solid rgba(138, 127, 127, 0.7);
+    border-left: 2px solid #e293dabc;
+    border-bottom: 2px solid #e293dabc;
 }
 
 @media (min-width: 1200px){
@@ -133,6 +135,8 @@ h5 {
 #lg-list {
     height: 83.5vh;
     background-color: #F8D0F4;
+    border-right: 2px solid #e293dabc;
+    border-bottom: 2px solid #e293dabc;
 }
 
 .card {
